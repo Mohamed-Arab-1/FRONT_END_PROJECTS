@@ -1,0 +1,66 @@
+@media (max-width:768px){
+    .nav-burger{
+        display: flex;
+    }
+    .nav-menu{
+        background-color: var(--color-bg);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        gap: 1.5rem;
+        transition: all 0.3s;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .nav-toggle:checked ~ .nav-menu{
+        padding: 2rem 0;
+        max-height: 300px;
+    }
+    .nav-toggle:checked ~ .nav-burger span:nth-child(1){
+        transform: translateY(7px) rotate(45deg);
+    }
+    .nav-toggle:checked ~ .nav-burger span:nth-child(2){
+        opacity: 0;
+    }
+    .nav-toggle:checked ~ .nav-burger span:nth-child(3){
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    /* About Section */
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-content{
+        padding: 3rem 1.5rem;
+    }
+    /* location Section */
+    .location{
+        grid-template-columns: 1fr;
+    }
+    .location-content{
+        padding: 3rem 1.5rem;
+    }
+    /* Baking Section */
+    .baking-grid {
+        grid-template-columns: 1fr;
+    }
+    /* Contact Section */
+    .contact {
+        grid-template-columns: 1fr;
+    }
+    .contact-map {
+        height: 350px;
+    }
+    .contact-content {
+        padding: 3rem 1.5rem;
+    }
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
